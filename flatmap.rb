@@ -101,7 +101,6 @@ def sessions(event, sessions)
             item(:format, session['format']),
             item(:body, session['body']),
             item(:state, session['state']),
-            item(:audience, session['audience']),
             item(:slug, session['slug']),
             item(:title, session['title']),
             item(:lang, session['language']),
