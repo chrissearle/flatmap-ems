@@ -24,8 +24,12 @@ get '/events/:slug/sessions' do
   send_collection('/', {})
 end
 
-get '/events/:slug/slots' do
-  send_collection('/', {})
+get '/events/:event/slots/:slug' do
+  slots(params[:event], db["slots"].find("event" => params[:event], "slug" => params[:slug]))
+end
+
+get '/events/:event/slots' do
+  slots(params[:event], db["slots"])
 end
 
 get '/events/:event/rooms/:slug' do
@@ -54,6 +58,24 @@ get '/' do
                            }
                        ]
                   })
+end
+
+def slots(event, slots)
+  data = {:items => []}
+
+  slots.find.each do |slot|
+    data[:items] << {
+        :href => url_for("/events/#{event}/slots/#{slot['slug']}", :full),
+        :data => [
+            {
+                :start => slot['start'].strftime("%FT%T%:Z").gsub(/UTC/, "Z"),
+                :end => slot['end'].strftime("%FT%T%:Z").gsub(/UTC/, "Z")
+            }
+        ]
+    }
+  end
+
+  send_collection url_for("/events/#{event}/slots", :full), data
 end
 
 def rooms(event, rooms)
