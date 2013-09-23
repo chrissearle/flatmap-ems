@@ -1,0 +1,98 @@
+[
+    {
+        start: new ISODate("2013-05-13T07:00:00Z"),
+        end: new ISODate("2013-05-13T08:00:00Z"),
+        event: "2013",
+        slug: "13-slot1"
+    },
+    {
+        start: new ISODate("2013-05-13T08:10:00Z"),
+        end: new ISODate("2013-05-13T08:50:00Z"),
+        event: "2013",
+        slug: "13-slot2"
+    },
+    {
+        start: new ISODate("2013-05-13T09:20:00Z"),
+        end: new ISODate("2013-05-13T10:00:00Z"),
+        event: "2013",
+        slug: "13-slot3"
+    },
+    {
+        start: new ISODate("2013-05-13T10:10:00Z"),
+        end: new ISODate("2013-05-13T10:50:00Z"),
+        event: "2013",
+        slug: "13-slot4"
+    },
+    {
+        start: new ISODate("2013-05-13T11:50:00Z"),
+        end: new ISODate("2013-05-13T12:30:00Z"),
+        event: "2013",
+        slug: "13-slot5"
+    },
+    {
+        start: new ISODate("2013-05-13T12:40:00Z"),
+        end: new ISODate("2013-05-13T13:20:00Z"),
+        event: "2013",
+        slug: "13-slot6"
+    },
+    {
+        start: new ISODate("2013-05-13T13:50:00Z"),
+        end: new ISODate("2013-05-13T14:30:00Z"),
+        event: "2013",
+        slug: "13-slot7"
+    },
+    {
+        start: new ISODate("2013-05-13T14:40:00Z"),
+        end: new ISODate("2013-05-13T15:20:00Z"),
+        event: "2013",
+        slug: "13-slot8"
+    },
+    {
+        start: new ISODate("2013-05-14T07:00:00Z"),
+        end: new ISODate("2013-05-14T08:00:00Z"),
+        event: "2013",
+        slug: "14-slot1"
+    },
+    {
+        start: new ISODate("2013-05-14T08:10:00Z"),
+        end: new ISODate("2013-05-14T08:50:00Z"),
+        event: "2013",
+        slug: "14-slot2"
+    },
+    {
+        start: new ISODate("2013-05-14T09:20:00Z"),
+        end: new ISODate("2013-05-14T10:00:00Z"),
+        event: "2013",
+        slug: "14-slot3"
+    },
+    {
+        start: new ISODate("2013-05-14T10:10:00Z"),
+        end: new ISODate("2013-05-14T10:50:00Z"),
+        event: "2013",
+        slug: "14-slot4"
+    },
+    {
+        start: new ISODate("2013-05-14T11:50:00Z"),
+        end: new ISODate("2013-05-14T12:30:00Z"),
+        event: "2013",
+        slug: "14-slot5"
+    },
+    {
+        start: new ISODate("2013-05-14T12:40:00Z"),
+        end: new ISODate("2013-05-14T13:20:00Z"),
+        event: "2013",
+        slug: "14-slot6"
+    },
+    {
+        start: new ISODate("2013-05-14T13:50:00Z"),
+        end: new ISODate("2013-05-14T14:30:00Z"),
+        event: "2013",
+        slug: "14-slot7"
+    },
+    {
+        start: new ISODate("2013-05-14T14:40:00Z"),
+        end: new ISODate("2013-05-14T15:20:00Z"),
+        event: "2013",
+        slug: "14-slot8"
+    }
+]
