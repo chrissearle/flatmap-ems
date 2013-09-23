@@ -6,13 +6,18 @@ GEM
     bson_ext (1.9.2)
       bson (~> 1.9.2)
     daemons (1.1.9)
+    dalli (2.6.4)
     emk-sinatra-url-for (0.2.1)
       sinatra (>= 0.9.1.1)
     eventmachine (1.0.3)
+    kgio (2.8.1)
+    memcachier (0.0.2)
     mongo (1.9.2)
       bson (~> 1.9.2)
     multi_json (1.8.0)
     rack (1.5.2)
+    rack-cache (1.2)
+      rack (>= 0.4)
     rack-protection (1.5.0)
       rack
     rack-test (0.6.2)
@@ -39,8 +44,12 @@ PLATFORMS
 
 DEPENDENCIES
   bson_ext
+  dalli
   emk-sinatra-url-for
+  kgio
+  memcachier
   mongo
+  rack-cache
   sinatra
   sinatra-contrib
   thin

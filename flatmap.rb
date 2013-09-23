@@ -3,6 +3,9 @@ require 'sinatra/json'
 require 'sinatra/url_for'
 require 'mongo'
 
+require 'dalli'
+require 'rack-cache'
+
 include Mongo
 
 if settings.environment == :development
@@ -16,6 +19,7 @@ else
 end
 
 get '/static/EMS-Config.plist' do
+  cache_control :public, max_age: 30  # 30 secs. This is pretty static but if it changes we want to get it fast.
   content_type 'application/xml', :charset => 'utf-8'
   send_file File.join(settings.root, 'static/EMS-Config.plist')
 end
@@ -137,6 +141,7 @@ end
 
 
 def send_collection(href, data)
+  cache_control :public, max_age: 1800  # 30 mins.
   content_type 'application/vnd.collection+json', :charset => 'utf-8'
 
   data[:version] = "1.0"
